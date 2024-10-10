@@ -125,8 +125,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  min-width: 150px;
+  width: 13em;
 }
 
 .menu-item p {
@@ -143,20 +142,18 @@ header {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 4rem;
 }
 
 .order-left-card1 {
-  /* background-image: url(/public/assets/iteration-2/cta/kart-1.png); */
-  background-repeat: no-repeat;
+  background-image: url(/public/assets/iteration-2/cta/kart-1.png);
   background-size: cover;
   height: 449px;
   width: 531px;
-  border-radius: 2rem;
-  display: flex;
+  border-radius: 0.8rem;
 }
 
 .card1-text {
-  position: absolute;
   padding-left: 2rem;
   padding-top: 1.5rem;
 }
@@ -175,20 +172,14 @@ header {
   color: var(--color-white);
 }
 
-.order-right {
-  position: relative;
-}
-
 .order-right-card1 {
   background-color: var(--color-dark-gray);
   border-radius: 1rem;
   min-height: 220px;
-  position: relative;
   display: flex;
-}
-
-.r-card1-text {
-  position: relative;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
 }
 
 .order-right-card2 {
@@ -197,6 +188,91 @@ header {
   background-size: contain;
   border-radius: 1rem;
   min-height: 220px;
+}
+
+.order-text {
+  text-align: center;
+}
+
+.order-text p {
+  font-family: Satisfy;
+  color: var(--color-red);
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.order-text h2 {
+  font-family: Barlow;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.order-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+  margin: 2rem 0;
+}
+
+.food-buttons {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.food-button img {
+  margin-right: 0.5rem;
+}
+
+.food-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11em;
+  min-width: 150px;
+  font-family: Barlow;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+  background-color: var(--color-white);
+  padding: 0.5rem 0rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.food-button:hover {
+  opacity: 0.9;
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+}
+
+.order-foods {
+  display: flex;
+  justify-content: center;
+}
+
+.food {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.food-img-name {
+  color: var(--color-dark-gray);
+}
+
+.food-rank-price {
+  font-family: Barlow;
+  color: var(--color-dark-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 700px) {

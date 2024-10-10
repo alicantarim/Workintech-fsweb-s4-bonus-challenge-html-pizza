@@ -90,9 +90,6 @@
     <section class="order-container">
       <section class="order-section">
         <div class="order-left-card1">
-          <div class="card1-img">
-            <img src="/public/assets/iteration-2/cta/kart-1.png" alt="" />
-          </div>
           <div class="card1-text">
             <h1>Özel Lezzetus</h1>
             <p>Position: Absolute Acı Burger</p>
@@ -103,8 +100,10 @@
         <div class="order-right">
           <div class="order-right-card1">
             <div class="r-card1-text">
-              <h1>Hackathlon Burger Menü</h1>
-              <button class="siparis-ver-btn">SİPARİŞ VER</button>
+              <div>
+                <h1>Hackathlon Burger Menü</h1>
+                <button class="siparis-ver-btn">SİPARİŞ VER</button>
+              </div>
               <img src="/public/assets/iteration-2/cta/kart-2.png" alt="" />
             </div>
           </div>
@@ -116,11 +115,83 @@
           </div>
         </div>
       </section>
+      <!-- ORDER TEXT AREA -->
+      <section class="order-text">
+        <p>en çok paketlenen menüler</p>
+        <h2>Acıktıran Kodlara Doyuran Lezzetler</h2>
+      </section>
+      <!-- ORDER BUTTONS -->
+      <section class="order-buttons">
+        <button class="food-button">
+          <img src="/public/assets/iteration-2/icons/1.svg" />Ramen
+        </button>
+        <button
+          style="
+            background-color: var(--color-dark-gray);
+            color: var(--color-white);
+          "
+          class="food-button"
+        >
+          <img src="/public/assets/iteration-2/icons/2.svg" />Pizza
+        </button>
+        <button class="food-button">
+          <img src="/public/assets/iteration-2/icons/3.svg" />Burger
+        </button>
+        <button class="food-button">
+          <img src="/public/assets/iteration-2/icons/4.svg" />French Fries
+        </button>
+        <button class="food-button">
+          <img src="/public/assets/iteration-2/icons/5.svg" />Fast Food
+        </button>
+        <button class="food-button">
+          <img src="/public/assets/iteration-2/icons/6.svg" />Soft Drinks
+        </button>
+      </section>
+
+      <!-- ORDER FOODS -->
+      <section class="order-foods">
+        <div class="food">
+          <div class="food-img-name">
+            <img src="/public/assets/iteration-2/pictures/food-1.png" alt="" />
+            <h2>Terminal Pizza</h2>
+          </div>
+          <div class="food-rank-price">
+            <p>4.9</p>
+            <p>(200)</p>
+            <h2>60₺</h2>
+          </div>
+        </div>
+        <div class="food">
+          <div class="food-img-name">
+            <img src="/public/assets/iteration-2/pictures/food-2.png" alt="" />
+            <h2>Position Absolute Acı Pizza</h2>
+          </div>
+          <div class="food-rank-price">
+            <p>4.5</p>
+            <p>(350)</p>
+            <h2>72₺</h2>
+          </div>
+        </div>
+        <div class="food">
+          <div class="food-img-name">
+            <img src="/public/assets/iteration-2/pictures/food-3.png" alt="" />
+            <h2>useEffect Tavuklu Burger</h2>
+          </div>
+          <div class="food-rank-price">
+            <p>4.7</p>
+            <p>(223)</p>
+            <h2>94₺</h2>
+          </div>
+        </div>
+      </section>
     </section>
+
+    <!-- FOOTER AREA -->
+    <footer></footer>
   </body>
 </html>
 
-<!-- 
+<!--  
   display: flex;
   flex-direction: column;
   justify-content: start;
