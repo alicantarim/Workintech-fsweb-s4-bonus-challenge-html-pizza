@@ -255,12 +255,16 @@ header {
 .order-foods {
   display: flex;
   justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .food {
   background-color: var(--color-white);
   border-radius: 0.5rem;
   padding: 2rem;
+  border: solid 0.13rem var(--color-red);
+  box-shadow: 5px 5px 20px var(--color-light-gray);
 }
 
 .food-img-name {
@@ -275,7 +279,7 @@ header {
   align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .menu-item {
     justify-content: start;
   }
