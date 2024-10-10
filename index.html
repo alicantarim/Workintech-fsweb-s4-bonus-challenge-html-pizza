@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,20 +28,26 @@
       href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
     <title>Workintech + 🍕</title>
   </head>
 
   <body>
+    <!-- HEADER AREA -->
     <header>
       <div class="header-content">
         <h1>Teknolojik Yemekler</h1>
         <div class="text">
-          <p>Fırsatı kaçırma</p>
+          <p>fırsatı kaçırma</p>
           <h2>KOD ACIKTIRIR PİZZA, DOYURUR.</h2>
         </div>
-        <button class="aciktimBtn">ACIKTIM</button>
+        <button class="aciktim-btn">ACIKTIM</button>
       </div>
     </header>
+
     <!-- MENU SECTION -->
     <section class="menu-section">
       <div class="menu-content">
@@ -72,25 +79,56 @@
         <div class="menu-item">
           <img src="/public/assets/iteration-2/icons/6.svg" alt="" />
           <div class="spacer-menuItem"></div>
-          <p>Gazlı İçecekler</p>
+          <p>Gazlı İçecek</p>
         </div>
       </div>
     </section>
 
     <div></div>
 
-    <!--  -->
+    <!-- ORDER SECTION -->
     <section class="order-container">
       <section class="order-section">
-        <div class="order-left">
-          <div class="text-area">
+        <div class="order-left-card1">
+          <div class="card1-img">
+            <img src="/public/assets/iteration-2/cta/kart-1.png" alt="" />
+          </div>
+          <div class="card1-text">
             <h1>Özel Lezzetus</h1>
             <p>Position: Absolute Acı Burger</p>
-            <button class="siparis-ver">SİPARİŞ VER</button>
+            <br />
+            <button class="siparis-ver-btn">SİPARİŞ VER</button>
           </div>
         </div>
-        <div class="order-right"></div>
+        <div class="order-right">
+          <div class="order-right-card1">
+            <div class="r-card1-text">
+              <h1>Hackathlon Burger Menü</h1>
+              <button class="siparis-ver-btn">SİPARİŞ VER</button>
+              <img src="/public/assets/iteration-2/cta/kart-2.png" alt="" />
+            </div>
+          </div>
+          <div class="order-right-card2">
+            <div class="r-card2-text">
+              <h1>Çoooook hızlı npm gibi kurye</h1>
+              <button class="siparis-ver-btn">SİPARİŞ VER</button>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
   </body>
 </html>
+
+<!-- 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: url(/public/assets/iteration-2/cta/kart-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 449px;
+  width: 531px;
+  border-radius: 1rem;
+-->
