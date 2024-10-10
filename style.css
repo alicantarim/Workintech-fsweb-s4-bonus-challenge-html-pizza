@@ -22,11 +22,10 @@
   --color-white: #ffffff;
 }
 
-/* 
 * {
   border: 1px solid purple;
   background-color: rgba(130, 0, 130, 0.05);
-} */
+}
 
 body {
   margin: 0;
@@ -163,6 +162,7 @@ header {
   font-family: Quattrocento;
   font-size: 3.6rem;
   color: var(--color-white);
+  line-height: normal;
 }
 
 .card1-text p {
@@ -279,6 +279,64 @@ header {
   align-items: center;
 }
 
+.footer-container {
+  background-color: var(--color-dark-gray);
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.footer-column h2 {
+  font-family: "Londrina Solid";
+  font-size: 2.5rem;
+  width: 50%;
+  line-height: normal;
+}
+
+.flexcolumn a {
+  display: flex;
+}
+
+.insta-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+/* UTILITY CLASSES */
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.justify-center {
+  justify-content: center;
+  gap: 3rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .menu-item {
     justify-content: start;
@@ -288,6 +346,16 @@ header {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.color {
+  color: var(--color-white);
+  font-family: Barlow;
+  font-weight: bold;
+}
+
+hr {
+  margin: 2.5rem 0;
 }
 
 /* -----------------------------------------------------   */
