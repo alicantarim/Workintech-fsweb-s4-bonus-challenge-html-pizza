@@ -44,7 +44,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   width: 100;
-  height: 1080px;
+  min-height: 1080px;
 }
 
 .header-content h1 {
@@ -52,12 +52,13 @@ header {
   font-size: 50px;
   line-height: 1.1;
   color: var(--color-white);
+  margin: 2rem 0;
 }
 
 .text p {
   font-family: Satisfy;
   color: var(--color-yellow);
-  font-size: 46px;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -80,6 +81,8 @@ header {
   width: 10rem;
   padding: 0.8rem 0rem;
   border-radius: 2rem;
+  border: none;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
@@ -97,6 +100,8 @@ header {
   width: 10rem;
   padding: 0.8rem 0rem;
   border-radius: 2rem;
+  border: none;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
@@ -172,26 +177,35 @@ header {
   color: var(--color-white);
 }
 
+.order-right {
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 35%; */
+}
+
 .order-right-card1 {
-  background-color: var(--color-dark-gray);
+  background-image: url(/public/assets/iteration-2/cta/kart-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 1rem;
   min-height: 220px;
+  width: 531px;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 50px;
+  align-items: center;
+  margin-bottom: 0.4rem;
 }
 
 .order-right-card2 {
   background-image: url(/public/assets/iteration-2/cta/kart-3.png);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
   border-radius: 1rem;
   min-height: 220px;
-}
-
-.order-text {
-  text-align: center;
+  width: 531px;
+  display: flex;
+  align-items: center;
 }
 
 .order-text p {
@@ -243,10 +257,17 @@ header {
   background-color: var(--color-white);
   padding: 0.5rem 0rem;
   border-radius: 2rem;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .food-button:hover {
+  opacity: 0.9;
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+}
+
+.food-button:focus {
   opacity: 0.9;
   background-color: var(--color-dark-gray);
   color: var(--color-white);
@@ -264,7 +285,7 @@ header {
   border-radius: 0.5rem;
   padding: 2rem;
   border: solid 0.13rem var(--color-red);
-  box-shadow: 5px 5px 20px var(--color-light-gray);
+  box-shadow: 5px 5px 10px var(--color-light-gray);
 }
 
 .food-img-name {
@@ -279,6 +300,11 @@ header {
   align-items: center;
 }
 
+.footer-row {
+  justify-content: center;
+  gap: 9rem;
+}
+
 .footer-container {
   background-color: var(--color-dark-gray);
   margin-top: 5rem;
@@ -288,24 +314,40 @@ header {
 .footer-column h2 {
   font-family: "Londrina Solid";
   font-size: 2.5rem;
-  width: 50%;
+  width: 90%;
   line-height: normal;
 }
 
-.flexcolumn a {
+.flex-column a {
   display: flex;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.footer-column h3 {
+  margin-bottom: 2rem;
+}
+
+.flex-column a img {
+  padding-right: 1rem;
 }
 
 .insta-row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  width: 25rem;
   gap: 1rem;
-  width: 50%;
   margin-top: 2rem;
 }
 
 /* UTILITY CLASSES */
+
+.margin-padding-rst {
+  margin: 0;
+  padding: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -337,6 +379,16 @@ header {
   text-decoration: none;
 }
 
+hr {
+  margin: 2.5rem 0;
+}
+
+.color {
+  color: var(--color-white);
+  font-family: Barlow;
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   .menu-item {
     justify-content: start;
@@ -346,18 +398,18 @@ header {
     flex-direction: column;
     align-items: center;
   }
-}
 
-.color {
-  color: var(--color-white);
-  font-family: Barlow;
-  font-weight: bold;
-}
+  .footer-row {
+    flex-direction: column;
+    align-items: normal;
+    padding-left: 2rem;
+    gap: 5rem;
+  }
 
-hr {
-  margin: 2.5rem 0;
+  .footer-column h2 {
+    width: 50%;
+  }
 }
-
 /* -----------------------------------------------------   */
 /* -----------------------------------------------------   */
 /* -----------------------------------------------------   */
