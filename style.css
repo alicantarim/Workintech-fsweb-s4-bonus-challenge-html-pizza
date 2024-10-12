@@ -21,11 +21,11 @@
   --color-beige: #faf7f2;
   --color-white: #ffffff;
 }
-
+/* 
 * {
   border: 1px solid purple;
   background-color: rgba(130, 0, 130, 0.05);
-}
+} */
 
 body {
   margin: 0;
@@ -36,7 +36,6 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   text-align: center;
   align-items: center;
   background-image: url("/public/assets/iteration-1/home-banner.png");
@@ -67,12 +66,13 @@ header {
   font-family: "Roboto Condensed";
   font-weight: lighter;
   color: white;
-  font-size: 86px;
+  font-size: 5.4rem;
   width: 700px;
   margin: 0;
   padding: 0;
 }
 
+button,
 .aciktim-btn {
   font-family: Barlow;
   font-weight: bold;
@@ -93,16 +93,16 @@ header {
 }
 
 .siparis-ver-btn {
-  font-family: Barlow;
-  font-weight: bold;
+  /* font-family: Barlow; */
+  /* font-weight: bold; */
   color: var(--color-red);
   background-color: var(--color-white);
-  width: 10rem;
+  /* width: 10rem;
   padding: 0.8rem 0rem;
   border-radius: 2rem;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
 }
 
 .siparis-ver-btn:hover {
@@ -113,8 +113,7 @@ header {
 
 .menu-section {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 1rem 0;
   background-color: var(--color-white);
 }
 
@@ -130,6 +129,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 13em;
+  padding: 1rem 0;
 }
 
 .menu-item p {
@@ -142,11 +142,22 @@ header {
   width: 1rem;
 }
 
+.order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
 .order-section {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 4rem;
+  flex-wrap: wrap;
+  max-width: 1250px;
 }
 
 .order-left-card1 {
@@ -208,6 +219,17 @@ header {
   align-items: center;
 }
 
+.r-card-text h1 {
+  font-family: Barlow;
+  font-size: 2rem;
+  width: 60%;
+  padding-bottom: 1.1rem;
+}
+
+.r-card-text {
+  padding-left: 2rem;
+}
+
 .order-text p {
   font-family: Satisfy;
   color: var(--color-red);
@@ -227,7 +249,6 @@ header {
 .order-buttons {
   display: flex;
   justify-content: center;
-  width: 100%;
   flex-wrap: wrap;
   gap: 1.7rem;
   margin: 2rem 0;
@@ -278,6 +299,7 @@ header {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  max-width: 1250px;
 }
 
 .food {
@@ -341,6 +363,10 @@ header {
   margin-top: 2rem;
 }
 
+.footer-row2 {
+  padding-bottom: 2rem;
+}
+
 /* UTILITY CLASSES */
 
 .margin-padding-rst {
@@ -389,7 +415,12 @@ hr {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+/* MEDIA QUERRY */
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+  }
+
   .menu-item {
     justify-content: start;
   }
