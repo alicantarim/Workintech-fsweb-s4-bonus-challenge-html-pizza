@@ -2,6 +2,8 @@
 
 Bu proje, Workintech Full Stack Web Geliştirme eğitimindeki S8 sunuma hazırlık olarak, HTML ve CSS becerilerini geliştirmeniz için tasarlanmıştır. Bu projede, sadece HTML ve CSS kullanarak verilen tasarımı aynen uygulamanız beklenmektedir. Figma tasarım dosyasını referans alarak, sayfanızın görsel yapısını oluşturun.
 
+/Users/alicantarim/Desktop/PizzaWebPage.png
+
 **Amaç:**
 
 - Verilen Figma tasarımına birebir uyan, mobil ve desktop uyumlu statik bir HTML yapısı oluşturmak.
