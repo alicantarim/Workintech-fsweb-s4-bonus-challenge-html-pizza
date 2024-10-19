@@ -2,7 +2,7 @@
 
 Bu proje, Workintech Full Stack Web Geliştirme eğitimindeki S8 sunuma hazırlık olarak, HTML ve CSS becerilerini geliştirmeniz için tasarlanmıştır. Bu projede, sadece HTML ve CSS kullanarak verilen tasarımı aynen uygulamanız beklenmektedir. Figma tasarım dosyasını referans alarak, sayfanızın görsel yapısını oluşturun.
 
-![Uploading PizzaWebPage.png…]()
+![PizzaWebPage](https://github.com/user-attachments/assets/f5c831e2-ba17-479c-9dcd-8baeaeec915d)
 
 **Amaç:**
 
